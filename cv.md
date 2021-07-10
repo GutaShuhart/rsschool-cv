@@ -45,6 +45,7 @@ function isSquare(n) {
 ## Experience:
 
 2020 : Worked how web-designer in Prognosist company. Created design app for company.
+2021: Created and defended two projects in HTML Academy: "Device" and "Cat energy".
 
 ## Language:
 
