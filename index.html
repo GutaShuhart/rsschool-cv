@@ -6,15 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
   <title class="visually-hidden">Curriculum vitae E.Ukradyga</title>
 </head>
 
-<body>
+<body class="page-body">
   <header class="page-header">
-    <div class="page-header__name">Elizaveta Ukradyga</div>
-    <div class="page-header__profession">Frontend developer</div>
+    <button class="page-header__toggle" type="button"><span class="visually-hidden">Open</span></button>
+    <nav class="page-header__navigation">
+      <ul class="page-header__list">
+        <li class="page-header__item">
+          <a class="page-header__link" href="#skills">Skills</a>
+        </li>
+        <li class="page-header__item"><a class="page-header__link" href="#language">Language</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="#sample">Sample
+            code</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="#education">Education</a></li>
+        <li class="page-header__item"><a class="page-header__link" href="#examples">Examples</a></li>
+      </ul>
+    </nav>
+    <div class="page-header__wrapper">
+      <div class="page-header__name">Elizaveta Ukradyga</div>
+      <div class="page-header__profession">Frontend developer</div>
+      <div class="page-header__greetings">Hello! I have been studying Front-End for 6 months.<br>About me: extremely motivated for
+        career change goal. </div>
+      <section class="contacts">
+        <h2 class="contacts__title">Сontact me</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item"><a class="footer__link" href="mailto:tala@mail.ru">
+              <img src="images/mail.svg" alt="mail-link" class="contacts__icon" width="32" height="32">
+              <p class="visually-hidden">Email: tala.91@mail.ru</p>
+            </a></li>
+          <li class="contacts__item"><a class="footer__link" href="https://t.me/Liza_care">
+              <img src="images/telegram.svg" alt="telegram-link" class="contacts__icon" width="32" height="32">
+              <p class="visually-hidden">Telegram: @liza_care</p>
+            </a></li>
+          <li class="contacts__item"> <a class="footer__link" href="https://github.com/GutaShuhart">
+              <img src="images/github.svg" alt="github-link" class="contacts__icon" width="32" height="32">
+              <p class="visually-hidden">GitHub: GutaShuhart</p>
+            </a></li>
+        </ul>
+      </section>
+    </div>
     <div class="page-header__photo">
-      <img class="page-header__photo-img" src="photo/IMG_0198.jpeg" width="180" height="230" alt="Photo of candidate">
+      <img class="page-header__photo-img" src="photo/IMG_7982.jpeg" width="180" height="230" alt="Photo of candidate">
     </div>
   </header>
 
@@ -22,73 +57,144 @@
     <h1 class="visually-hidden"> Main information </h1>
     <div class="page-main__wrapper">
       <div class="page-main__info">
-        <section class="contacts">
-          <h2 class="contacts__title">Contacts</h2>
-          <ul class="contacts__list">
-            <li>Email: tala.91@mail.ru</li>
-            <li>Telegram: @liza_care</li>
-          </ul>
+        <section class="skills" id="skills">
+          <h2 class="title skills__title">Skills</h2>
+          <div class="skills__wrapper">
+
+            <h3 class="skills__part">Technical</h3>
+            <ul class="skills__list">
+              <li class="skills__item">HTML5/CSS3</li>
+              <li class="skills__item">Javascript</li>
+              <li class="skills__item">Git</li>
+              <li class="skills__item">Sass</li>
+              <li class="skills__item">Gulp</li>
+              <li class="skills__item">Figma</li>
+            </ul>
+          </div>
+          <div class="skills__wrapper">
+            <h3 class="skills__part">Personal qualities</h3>
+            <ul class="skills__list">
+              <li class="skills__item">Sociability</li>
+              <li class="skills__item">Like to study</li>
+              <li class="skills__item">Attentiveness</li>
+            </ul>
+          </div>
         </section>
-        <section class="skills">
-          <h2 class="skills__title">Skills</h2>
-          <h3 class="skills__technical">Technical</h3>
-          <ul>
-            <li>HTML5/CSS3</li>
-            <li>Javascript</li>
-            <li>Git</li>
-            <li>Sass</li>
-            <li>Gulp</li>
-          </ul>
-          <h3 class="skills__personal">Personal qualities</h3>
-          <ul>
-            <li>Sociability</li>
-            <li>Like to study</li>
-          </ul>
-        </section>
-        <section class="language">
-          <h2 class="language:">Language</h2>
-          <ul>
-            <li>Native russian</li>
-            <li>English A2</li>
+        <section class="language" id="language">
+          <h2 class="title language__title">Language</h2>
+          <ul class="language__list">
+            <li class="text language__item">Native russian</li>
+            <li class="text language__item">English A2</li>
           </ul>
         </section>
       </div>
-      <div class="page-main__main-info">
-        <section class="objective">
-          <h2 class="objective__title">Career objective</h2>
-          <div class="objective__text">I want to work frontend developer.</div>
-        </section>
-        <section class="sample-code">
-          <h2 class="sample-code__title">Sample code</h2>
-          <h3>javascript</h3>
-          <pre>
+      <section class="objective">
+        <h2 class="title objective__title">Career objective</h2>
+        <div class="text objective__text">I want to get a job as Junior Front End developer. Develop in a team IT specialists.</div>
+      </section>
+      <section class="sample-code" id="sample">
+        <h2 class="title sample-code__title">Sample code</h2>
+        <h3>javascript</h3>
+        <pre>
             <code>
-                function isSquare(n) {
-                  return Math.sqrt(n) % 1 === 0;
-                }
+                function min (array) {
+                if (array === undefined || array.length === 0 )  return 0;
+                const minNumber = Math.min(...array);
+                return minNumber;
+            }
+
+                function max (array) {
+                if (array === undefined || array.length === 0 )  return 0;
+                const maxNumber = Math.max(...array);
+                return maxNumber;
+            }
+
+                function avg (array) {
+                if (array === undefined || array.length === 0 )  return 0;
+                let sum = 0;
+                let count = array.length;
+                for (let i = 0; i &lt; count; i++) {
+                    sum += array[i];
+                };
+                return sum/count;
+            }
             </code>
         </pre>
-        </section>
-        <section class="education">
-          <h2 class="education__title">Education</h2>
-          <ul>
-            <li>Html Academy: HTML and CSS - first and second step.</li>
-            <li>WebDev: javascript course.</li>
-            <li>I. Petrichenko: javascript course.</li>
-          </ul>
-        </section>
-        <section class="experience">
-          <h2 class="experience__title">Experience</h2>
-          <ul>
-            <li>2020 : Worked how web-designer in Prognosist company. Created design app for company.</li>
-            <li>2021: Created and defended two projects in HTML Academy: "Device" and "Cat energy".</li>
-          </ul>
-        </section>
-      </div>
+      </section>
+      <section class="education" id="education">
+        <h2 class="title education__title">Education</h2>
+        <ul class="education__list">
+          <li class="text education__item">Html Academy: HTML and CSS - first and second step.</li>
+          <li class="text education__item">WebDev: javascript course.</li>
+          <li class="text education__item">I. Petrichenko: javascript course.</li>
+          <li class="text education__item">RSS: stage 0.</li>
+        </ul>
+      </section>
+      <section class="experience" id="experience">
+        <h2 class="title experience__title">Experience</h2>
+        <ul class="experience__list">
+          <li class="text experience__item">2020 : Worked as web-designer in Prognosist company. Created design app for
+            company.</li>
+          <li class="text experience__item">2021: Successfully completed two courses and defended two projects in HTML Academy: "Device" and "Cat
+            energy".</li>
+        </ul>
+      </section>
+      <section class="examples" id="examples">
+        <h2 class="title examples__title">Examples</h2>
+        <div class="examples__wrapper">
+          <figure class="examples__card">
+            <div class="examples__info">
+              <h3 class="examples__card-title">
+                <a class="examples__card-link"
+                  href="https://rolling-scopes-school.github.io/gutashuhart-JSFEPRESCHOOL/museum/">
+                  Museum project
+                </a>
+              </h3>
+              <p class="text examples__card-text">Project for rolling scopes school.</p>
+              <p class="text examples__card-text"> Responsiveness of the grid: mobile, tablet and desktop versions.
+                Responsiveness of graphics: retinization, image images.
+                Methodology: BEM.
+                Preprocessor to use: Sass.
+                Automation tool used: Gulp.
+                Cross-browser compatibility: Chrome, Firefox, Safari.
+              </p>
+            </div>
+            <a class="examples__card-link"
+              href="https://rolling-scopes-school.github.io/gutashuhart-JSFEPRESCHOOL/museum/">
+              <img class="examples__img" src="photo/museum.jpg" width="700" height="300" alt="Museum project">
+            </a>
+            <figcaption class="examples__figcaption">Museum</figcaption>
+          </figure>
+        </div>
+        <div class="examples__wrapper">
+          <figure class="examples__card">
+            <div class="examples__info">
+              <h3 class="examples__card-title">
+                <a class="examples__card-link" href="https://gutashuhart.github.io/1664451-cat-energy-22/">
+                  Cat energy project
+                </a>
+              </h3>
+              <p class="text examples__card-text">Project for HTML Academy.</p>
+              <p class="text examples__card-text"> Responsiveness of the grid: mobile, tablet and desktop versions.
+                Responsiveness of graphics: retinization, image images.
+                Methodology: BEM.
+                Preprocessor to use: Sass.
+                Automation tool used: Gulp.
+                Cross-browser compatibility: Chrome, Firefox, Safari.
+              </p>
+            </div>
+            <a href="https://gutashuhart.github.io/1664451-cat-energy-22/">
+              <img class="examples__img" src="photo/catenergy.jpg" width="700" height="300" alt="Cat energy project">
+            </a>
+            <figcaption class="examples__figcaption">Cat energy</figcaption>
+          </figure>
+        </div>
+      </section>
     </div>
     <footer class="footer">
       <a class="footer__github-link" href="https://github.com/GutaShuhart/rsschool-cv/tree/rsschool-cv-html">
-        <p>GitHub: GutaShuhart</p>
+        <img src="images/github.svg" alt="github-link" class="footer__guthub-svg" width="24" height="24">
+        <p class="visually-hidden">GitHub: GutaShuhart</p>
       </a>
       <a class="footer__logo-link" href="https://rs.school/js/">
         <img class="footer__logo-image" src="images/rsschool_logo.svg" width="128" height="24" alt="RS School logo">
@@ -97,6 +203,9 @@
     </footer>
 
   </main>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+  <script> hljs.initHighlightingOnLoad();</script>
+  <script src="script.js"></script>
 </body>
 
 </html>
